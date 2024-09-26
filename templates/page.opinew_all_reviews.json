@@ -10,10 +10,19 @@
 {
   "sections": {
     "main": {
-      "type": "main-addresses",
+      "type": "apps",
+      "blocks": {
+        "opinew-reviews-all-reviews-code": {
+          "type": "shopify://apps/opinew-reviews/blocks/all-reviews/e1d8e0dc-17ff-4e4a-8a8a-1e73c8ef8676",
+          "settings": {
+          }
+        }
+      },
+      "block_order": [
+        "opinew-reviews-all-reviews-code"
+      ],
       "settings": {
-        "padding_top": 36,
-        "padding_bottom": 36
+        "include_margins": true
       }
     }
   },
