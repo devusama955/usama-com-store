@@ -113,7 +113,6 @@
                       {{ 'onboarding.product_title' | t }}
                     {%- endunless -%}
                   </h2>
-                  <div class='opinew-stars-plugin-product-list'>{% render 'opinew_review_stars_lists' product:product %}</div>
                 {%- when 'price' -%}
                   <div id="price-{{ section.id }}" role="status" {{ block.shopify_attributes }}>
                     {%- render 'price',
