@@ -3601,3 +3601,6 @@ details-disclosure > details {
 .header{
   display: none !important;
 }
+.banner {
+   display: none;
+}
