@@ -2,8 +2,28 @@
     <div class="container">
         <div class="banner_inner">
             {% if section.settings.headline !=blank %}
-                <h2>{{if section.settings.headline}}</h2>
-            {%endif%}
+                <h2>{{ section.settings.headline }}</h2>
+            {% endif %}
         </div>
     </div>
 </section>
+
+{% schema %}
+{
+  "name": "Banner Section",
+  "settings": [
+    {
+      "type": "text",
+      "id": "headline",
+      "label": "Headline",
+      "default": "Your Banner Headline"
+    }
+  ],
+  "blocks": [],
+  "presets": [
+    {
+      "name": "Banner Section"
+    }
+  ]
+}
+{% endschema %}
