@@ -1,8 +1,27 @@
 <style>
-    .announcement {
+ .announcement {
          width: 100%;
          background-color: #C5DE48;
-    }
+ }
+.container {
+    max-width: 1920px;
+    margin: 0 auto;
+    padding: 0;
+}
+.announcement_inner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    position: relative;
+}
+.announcement_inner::after {
+    position: absolute;
+    content: "";
+    border-right: 1px dashed #202020;
+
+}
+
 </style>
 <section class="announcement">
     <div class="container">
