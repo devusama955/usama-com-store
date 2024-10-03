@@ -1,13 +1,15 @@
 <style>
- .announcement {
-         width: 100%;
-         background-color: #C5DE48;
- }
+.announcement {
+    width: 100%;
+    background-color: #C5DE48;
+}
+
 .container {
     max-width: 1920px;
     margin: 0 auto;
     padding: 0;
 }
+
 .announcement_inner {
     display: flex;
     justify-content: center;
@@ -15,24 +17,28 @@
     gap: 16px;
     position: relative;
 }
-.announcement .text h2{
+
+.announcement .text h2 {
     color: #202020;
-    font-family: "Andale Mono";
+    font-family: "Andale Mono", monospace; /* Added fallback font */
     font-size: 12px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
+    font-weight: 400; /* Removed redundant 'normal' values */
     text-transform: uppercase;
-}
-.announcement .text {
-  position: relative;
-}
-.announcement .text ::after {
-    position: absolute;
-    content: "";
-    border-right: 1px dashed #202020;
+    line-height: 1.2; /* Specified line-height to improve readability */
 }
 
+.announcement .text {
+    position: relative;
+}
+
+.announcement .text::after {
+    position: absolute;
+    content: "";
+    right: 0;
+    top: 0;
+    bottom: 0;
+    border-right: 1px dashed #202020;
+}
 
 
 </style>
