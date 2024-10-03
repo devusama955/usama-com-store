@@ -15,12 +15,22 @@
     gap: 16px;
     position: relative;
 }
-.announcement_inner::after {
-    position: absolute;
-    content: "";
-    border-right: 1px dashed #202020;
-
+.announcement .text h2{
+    color: #202020;
+    font-family: "Andale Mono";
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: uppercase;
+    position: relative;
 }
+.announcement .text h2::after {
+    position: absolute;
+    border-right: 1px dashed #202020; 
+}
+
+
 
 </style>
 <section class="announcement">
