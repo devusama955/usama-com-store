@@ -122,6 +122,7 @@
               >
                 {{ card_product.title | escape }}
               </a>
+              <div class='opinew-stars-plugin-product-list'>{% render 'opinew_review_stars_lists' product:card_product %}</div>
             </h3>
           </div>
           <div class="card__badge {{ settings.badge_position }}">
@@ -159,6 +160,7 @@
             >
               {{ card_product.title | escape }}
             </a>
+            <div class='opinew-stars-plugin-product-list'>{% render 'opinew_review_stars_lists' product:card_product %}</div>
           </h3>
           <div class="card-information">
             {%- if show_vendor -%}
@@ -511,6 +513,7 @@
                       <div class="quick-add-modal__content-info--bulk-details large-up-hide">
                         <a href="{{ card_product.url }}" class="full-unstyled-link">
                           <h3>{{ card_product.title | escape }}</h3>
+                          <div class='opinew-stars-plugin-product-list'>{% render 'opinew_review_stars_lists' product:card_product %}</div>
                         </a>
                         {% render 'price', product: card_product, price_class: '', show_compare_at_price: true %}
                         {%- if card_product.quantity_price_breaks_configured? -%}
@@ -526,6 +529,7 @@
                           <h3 class="h2">
                             {{ card_product.title | escape }}
                           </h3>
+                          <div class='opinew-stars-plugin-product-list'>{% render 'opinew_review_stars_lists' product:card_product %}</div>
                         </a>
                         {% render 'price', product: card_product, price_class: '', show_compare_at_price: true %}
                         {%- if card_product.quantity_price_breaks_configured? -%}
