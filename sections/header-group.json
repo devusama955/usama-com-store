@@ -11,28 +11,37 @@
   "name": "t:sections.header.name",
   "type": "header",
   "sections": {
-    "announcement-bar": {
-      "type": "announcement-bar",
+    "announcement_KhbeaE": {
+      "type": "announcement",
       "blocks": {
-        "announcement-bar-0": {
-          "type": "announcement",
+        "section_rXwMfH": {
+          "type": "section",
           "settings": {
-            "text": "Welcome to our store",
-            "link": ""
+            "heading": "Bundle and Save",
+            "heading_url": ""
+          }
+        },
+        "section_rjm4WE": {
+          "type": "section",
+          "settings": {
+            "heading": "Jacket + Bibs = Save $100",
+            "heading_url": ""
+          }
+        },
+        "section_me8Lxk": {
+          "type": "section",
+          "settings": {
+            "heading": "Jacket + Bibs + Puffer = Save $150",
+            "heading_url": ""
           }
         }
       },
       "block_order": [
-        "announcement-bar-0"
+        "section_rXwMfH",
+        "section_rjm4WE",
+        "section_me8Lxk"
       ],
       "settings": {
-        "color_scheme": "scheme-1",
-        "show_line_separator": true,
-        "show_social": false,
-        "auto_rotate": false,
-        "change_slides_speed": 5,
-        "enable_country_selector": false,
-        "enable_language_selector": false
       }
     },
     "header": {
@@ -40,7 +49,7 @@
       "settings": {
         "logo_position": "middle-left",
         "menu": "main-menu",
-        "menu_type_desktop": "dropdown",
+        "menu_type_desktop": "mega",
         "sticky_header_type": "on-scroll-up",
         "show_line_separator": true,
         "color_scheme": "scheme-1",
@@ -56,7 +65,7 @@
     }
   },
   "order": [
-    "announcement-bar",
+    "announcement_KhbeaE",
     "header"
   ]
 }
