@@ -9,6 +9,11 @@
 */
 {
   "current": {
+    "logo": "shopify://shop_images/Vector_Stroke.png",
+    "favicon": "shopify://shop_images/InkLine_Logo.png",
+    "content_for_index": [
+
+    ],
     "blocks": {
       "opinew-global-code": {
         "type": "shopify://apps/opinew-product-reviews-app/blocks/global/e1d8e0dc-17ff-4e4a-8a8a-1e73c8ef8676",
