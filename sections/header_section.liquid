@@ -3,7 +3,7 @@
         <div class="header_inner">
             <div class="header_logo">
                 {% if section.settings.header_logo != blank %}
-                    {{ section.settings.header_logo | image_url: width | image_tag: loading: 'lazy' }}
+                    {{ section.settings.header_logo | image_tag: loading: 'lazy' }}
                 {% endif %}
             </div>
             <div class="header_neg">
