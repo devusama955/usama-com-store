@@ -4,8 +4,6 @@
             <div class="header_logo">
                 {% if section.settings.header_logo != blank %}
                     {{ section.settings.header_logo | image_url: width | image_tag: loading: 'lazy' }}
-                {% else %}
-                    {{ 'potions-header.png' | image_url: width: 300 | image_tag: loading: 'lazy' }}
                 {% endif %}
             </div>
             <div class="header_neg">
