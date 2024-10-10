@@ -1,0 +1,56 @@
+<section class="header">
+    <div class="container">
+        <div class="header_inner">
+            <div class="header_logo">
+                {% if section.settings.header_logo != blank %}
+                    {{ section.settings.header_logo | image_url: width | image_tag: loading: 'lazy' }}
+                {% else %}
+                    {{ 'potions-header.png' | image_url: width: 300 | image_tag: loading: 'lazy' }}
+                {% endif %}
+            </div>
+            <div class="header_neg">
+                {% for block in section.blocks %}
+                    {% if block.type == 'button_block' %}
+                        <a href="{{ block.settings.btn_link_block }}">{{ block.settings.btn_text_block }}</a>
+                    {% endif %}
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+</section>
+
+{% schema %}
+{
+  "name": "Header Section",
+  "settings": [
+    {
+      "type": "image_picker",
+      "id": "header_logo",
+      "label": "Header Logo"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "button_block",
+      "name": "Button Block",
+      "settings": [
+        {
+          "type": "text",
+          "id": "btn_text_block",
+          "label": "Button Text"
+        },
+        {
+          "type": "url",
+          "id": "btn_link_block",
+          "label": "Button Link"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Header"
+    }
+  ]
+}
+{% endschema %}
