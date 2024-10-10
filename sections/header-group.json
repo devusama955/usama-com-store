@@ -62,10 +62,17 @@
         "padding_top": 20,
         "padding_bottom": 20
       }
+    },
+    "header_section_wDJWXG": {
+      "type": "header_section",
+      "settings": {
+        "header_logo": "shopify://shop_images/InkLine_Logo.png"
+      }
     }
   },
   "order": [
     "announcement_KhbeaE",
-    "header"
+    "header",
+    "header_section_wDJWXG"
   ]
 }
