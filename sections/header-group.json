@@ -48,7 +48,7 @@
       "type": "header",
       "settings": {
         "logo_position": "middle-left",
-        "menu": "main-menu",
+        "menu": "product-categories",
         "menu_type_desktop": "mega",
         "sticky_header_type": "on-scroll-up",
         "show_line_separator": true,
@@ -62,17 +62,10 @@
         "padding_top": 20,
         "padding_bottom": 20
       }
-    },
-    "header_section_wDJWXG": {
-      "type": "header_section",
-      "settings": {
-        "header_logo": "shopify://shop_images/InkLine_Logo.png"
-      }
     }
   },
   "order": [
     "announcement_KhbeaE",
-    "header",
-    "header_section_wDJWXG"
+    "header"
   ]
 }
